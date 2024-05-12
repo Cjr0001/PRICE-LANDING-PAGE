@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta name="theme-color" content="#FF0000">
+    <title>Landing page</title>
+</head>
+<body>
+    <div id="details">
+        <h1 class="heading">Please select your suitable SCREENSTAR Streaming plan</h1><br>
+        <p class="detail"><span style="color:red">***</span> We offer 7 day money back guarantee. You can cancel your plan within 7 days of purchase.<span style="color:red">***</span></p>
+        <br><br>
+    </div>
+    <label class="range" for="range">Select your price range:</label>
+    <input type="range" id="range" name="range" min="0" max="1200" value="50">
+    <span id="selected-price"></span><br>
+   <div  class="select">
+    <h3>select currency: </h3>
+    <select id="currency" onchange="currency()">
+        <option id="INR">INR</option>
+        <option id="USD">USD</option>
+        <option id="EURO">EURO</option>
+    </select>
+   </div>
+
+<div id="container">
+        <div class="container1">
+            <div class="plan">
+                Basic
+            </div>
+            <div class="price1"> INR 199 per month</div>
+            <hr>
+            <h5> &#10004 Free 35 hours per month</h5> <hr>
+            <h5> &#10004 720p streaming quality</h5> <hr>
+            <h5> &#10004 Multi-Lingual feature</h5> <hr>
+            <h5> &#10006 multi-devices support</h5>
+            <br>
+            <button type="button" class="button">
+                BUY
+            </button>
+
+        </div>
+        <div class="container2">
+            <div class="plan">
+                Standard
+            </div>
+            <div class="price2"> INR 499 per month</div>
+            <hr>
+            <h5> &#10004 Free 75 hours per month</h5> <hr>
+            <h5> &#10004 1080p streaming quality</h5> <hr>
+            <h5> &#10004 Multi-Lingual feature</h5> <hr>
+            <h5> &#10004 multi-devices support</h5>
+            <h5> &#10006 Download-offline view </h5> <hr>
+            <br>
+            <button type="button" class="button">
+                BUY
+            </button>
+
+        </div>
+        <div class="container3">
+            <div class="plan">
+                Premium
+            </div>
+            <div class="price3"> INR 999 per month</div>
+            <hr>
+            <h5> &#10004 Free 150 hours per month</h5> <hr>
+            <h5> &#10004 4K streaming quality</h5> <hr>
+            <h5> &#10004 Multi-Lingual feature</h5> <hr>
+            <h5> &#10004 Download-offline view </h5> <hr>
+            <h5> &#10004 multi-devices support </h5>
+            <br>
+            <button type="button" class="button">
+                BUY 
+            </button>
+
+        </div>
+    
+
+
+
+ 
+</div>
+<br>
+<br>
+<h2 class="show-more">For more details click here ->  <button type="button" class="show-more">show more</button></h2>
+<br><br>
+<script src="script.js">
+
+</script>
+</body>
+</html>
